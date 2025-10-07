@@ -1,0 +1,48 @@
+Run the seed script to generate demo data:
+python seed.py
+
+Start the web app:
+python app.py
+
+Open in broswer
+http://127.0.0.1:5000
+
+Example Findings
+[CRITICAL] Req 3 — PAN plaintext detected in transactions
+[HIGH] Req 3 — Unencrypted backup containing PAN
+[MEDIUM] Req 7 — Excess privilege access to card_vault
+[MEDIUM] Req 8 — Repeated failed logins (brute force)
+[LOW] Req 1 — Access from non-allowlisted IP
+
+Reports
+Click Export Report in the navbar to generate:
+exports/frauddetector-report-YYYYmmdd-HHMMSS.md
+(Optional) PDF export if wkhtmltopdf is installed
+
+Hackathon Demo Script
+Problem (20s):
+PCI DSS gaps often cause breaches. GRC pros need real-time checks.
+
+Show Dashboard (60s):
+Badge, KPIs, and findings.
+
+Export Report (20s):
+One-click Markdown report.
+
+Flip-to-Green (60s):
+Start red (Non-Compliant)
+Fix storage (UNENCRYPTED → ENCRYPTED) → yellow
+Fix auth/transactions → green (Compliant)
+
+Wrap (20s):
+FraudDetector is a weekend-built, extensible PCI audit tool.
+Next steps: live log ingestion, anomaly detection, fraud pattern checks.
+
+Future Work
+Real-time log ingestion
+Fraud pattern detection (e.g., impossible travel, velocity anomalies)
+SIEM integration (Splunk, Sentinel)
+Multi-framework support (HIPAA, SOX, ISO 27001)
+
+License
+MIT License – feel free to use, extend, and improve.
